@@ -6,7 +6,7 @@ import styles from './filter.module.css';
 
 export const Filter = () => {
   const dispatch = useDispatch();
-  const filter = useSelector(selectFilter);
+  const { filter } = useSelector(selectFilter);
 
   return (
     <div className={styles.div}>
